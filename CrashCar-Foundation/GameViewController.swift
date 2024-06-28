@@ -8,19 +8,31 @@
 import UIKit
 import SpriteKit
 
-class GameSceneViewController: UIViewController {
+class GameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        
         if let view = self.view as! SKView? {
             if let scene = SKScene(fileNamed: "GameScene") {
                 scene.scaleMode = .aspectFill
                 view.presentScene(scene)
             }
+            
+            //        show node count
+                    view.showsNodeCount = true
+                    view.showsFPS = true
         }
+
         // Do any additional setup after loading the view.
     }
     
+    override var prefersStatusBarHidden: Bool{
+        return true
+    }
+    
+
 
     /*
     // MARK: - Navigation
