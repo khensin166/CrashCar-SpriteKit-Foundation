@@ -9,13 +9,13 @@ Repositori ini berisi perancangan aplikasi game berbasis ios
 Clone the project
 
 ```bash
-  git clone https://github.com/khensin166/PAP_039-037.git
+  git clone https://github.com/khensin166/CrashCar-SpriteKit-Foundation.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd PAP_039-037
+  cd CrashCar-SpriteKit-Foundation
 ```
 
 Run in Xcode
